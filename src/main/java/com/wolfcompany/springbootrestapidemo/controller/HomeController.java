@@ -18,9 +18,9 @@ import java.util.Map;
 public class HomeController {
 
     @Autowired
-    private UserService userService;
+    private UserServiceImpl userService;
     @Autowired
-    private SecurityService securityService;
+    private SecurityServiceImpl securityService;
 
     @GetMapping("") //home
     public Map<String, String> home() {
