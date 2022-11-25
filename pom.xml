@@ -28,21 +28,33 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- JWT 라이브러리 -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+
+		<!-- JWT 라이브러리 -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
 			<version>0.9.1</version>
 		</dependency>
+
+		<!-- JUNIT4 테스트 라이브러리 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--	Springboot AOP 라이브러리	-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

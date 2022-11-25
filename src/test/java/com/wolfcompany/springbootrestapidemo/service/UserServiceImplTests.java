@@ -24,4 +24,5 @@ public class UserServiceImplTests {
         Assert.assertEquals(user, rst);
 
     }
+
 }

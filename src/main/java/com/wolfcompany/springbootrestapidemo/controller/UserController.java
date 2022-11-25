@@ -1,5 +1,6 @@
 package com.wolfcompany.springbootrestapidemo.controller;
 
+import com.wolfcompany.springbootrestapidemo.annotation.TokenRequired;
 import com.wolfcompany.springbootrestapidemo.model.User;
 import com.wolfcompany.springbootrestapidemo.service.UserService;
 import com.wolfcompany.springbootrestapidemo.service.UserServiceImpl;
@@ -16,6 +17,7 @@ public class UserController {
     private UserServiceImpl userService;
 
     @GetMapping("")
+    @TokenRequired
     public List<User> getAllUsers() {
         return userService.getUsers();
     }
