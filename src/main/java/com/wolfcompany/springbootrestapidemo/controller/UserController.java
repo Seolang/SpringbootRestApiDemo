@@ -29,7 +29,7 @@ public class UserController {
 
     @GetMapping("/{userid}")
     public User getUserByUserid(@PathVariable Integer userid) { // 이름이 같으면 PathVariable에 별도의 네이밍 필요 X
-
+        logger.debug(""+userid);
         return userService.getUserById(userid);
     }
 
@@ -41,7 +41,6 @@ public class UserController {
     @PutMapping("/{userid}")  // -> 추가 url이 없어도 되지만, key값을 주는것이 좋다
     public void modifyUser(@PathVariable Integer userid,
                            @RequestBody User user) {
-        logger.debug(""+userid);
         userService.modifyUser(userid, user);
     }
 
